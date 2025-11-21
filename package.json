@@ -1,0 +1,32 @@
+{
+  "name": "tdd-fizzbuzz",
+  "version": "1.0.0",
+  "description": "A simple implementation of the classic **FizzBuzz** problem using **Test-Driven Development (TDD)**. This project demonstrates how to drive design through small, incremental tests — following the red → green → refactor cycle.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isOmarDev/tdd-fizzbuzz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isOmarDev/tdd-fizzbuzz/issues"
+  },
+  "homepage": "https://github.com/isOmarDev/tdd-fizzbuzz#readme",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.10.1",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
