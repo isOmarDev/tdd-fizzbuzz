@@ -1,40 +1,20 @@
 {
-  // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
-    // File Layout
-    "rootDir": "./src",
-    "outDir": "./dist",
-
-    // Environment Settings
-    // See also https://aka.ms/tsconfig/module
-    "module": "nodenext",
+    "module": "ESNext",
     "target": "esnext",
-    "types": [],
-    // For nodejs:
-    // "lib": ["esnext"],
-    // "types": ["node"],
-    // and npm install -D @types/node
+    "types": ["node", "jest"],
+    "lib": ["ES2020"],
 
-    // Other Outputs
+    "rootDir": "src",
+    "outDir": "dist",
+
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
-
-    // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
-
-    // Style Options
-    // "noImplicitReturns": true,
-    // "noImplicitOverride": true,
-    // "noUnusedLocals": true,
-    // "noUnusedParameters": true,
-    // "noFallthroughCasesInSwitch": true,
-    // "noPropertyAccessFromIndexSignature": true,
-
-    // Recommended Options
     "strict": true,
-    "jsx": "react-jsx",
+    "esModuleInterop": true,
     "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
@@ -42,3 +22,23 @@
     "skipLibCheck": true
   }
 }
+
+// {
+//   "compilerOptions": {
+//     "target": "ES2020", // Modern JS output
+//     "module": "CommonJS", // Node.js uses CommonJS by default
+//     "lib": ["ES2020"], // Include ES2020 features
+//     "outDir": "dist", // Compiled JS output directory
+//     "rootDir": "src", // Source files root
+//     "types": ["node", "jest"],
+//     "strict": true, // Enable strict type checking
+//     "esModuleInterop": true, // Enable interoperability between CommonJS and ES Modules
+//     "forceConsistentCasingInFileNames": true, // Avoid import path issues on case-insensitive file systems
+//     "moduleResolution": "node", // Module resolution strategy
+//     "skipLibCheck": true, // Skip type checks for library files
+//     "resolveJsonModule": true, // Allow importing JSON files
+//     "noImplicitAny": true // Disallow any types
+//   },
+//   "include": ["src//*"], // Include source and test files
+//   "exclude": ["node_modules", "dist"]
+// }
