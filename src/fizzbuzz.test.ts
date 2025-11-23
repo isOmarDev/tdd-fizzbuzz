@@ -3,7 +3,7 @@
 // multiples of five it returns “Buzz.” For numbers that are multiples of both
 // three and five, it returns “FizzBuzz.”
 
-import { FizzBuzz } from '.';
+import { FizzBuzz } from './fizzbuzz';
 
 describe('FizzBuzz', () => {
   it.each([3, 9, 12])(
