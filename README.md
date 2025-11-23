@@ -30,9 +30,8 @@ Each new rule of FizzBuzz is added through a new test, evolving the solution out
 ```
 .
 ├── src/
-│   └── fizzbuzz.ts
-└── tests/
-    └── fizzbuzz.test.ts
+│   ├── fizzbuzz.ts
+│   └── index.ts
 ```
 
 ## ▶️ **Running the Project**
